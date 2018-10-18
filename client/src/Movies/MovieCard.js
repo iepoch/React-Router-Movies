@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const MovieCard = props => {
-    const { title, director, metascore, stars } = props;
+  const { title, director, metascore, stars } = props;
   return (
     <div className="movie-card">
       <h2>{title}</h2>
@@ -17,6 +17,7 @@ const MovieCard = props => {
           {star}
         </div>
       ))}
+      <div className="save-button" onClick={props.saveMovie}>Save</div>
     </div>
   );
 };
